@@ -8,6 +8,7 @@ That runs on the browser
 * [Table of content](#tabele-of-content)
     * [What is Phaser.js?](#what-is-pharserjs-)
     * [Project setup](#project-setup)
+    * [Game config](#)
     
 
 ## What is pharser.js ?:
@@ -17,15 +18,20 @@ you can start with an html file and one javascript file
 
 pharser organize codein three steps 
 
-[1] -load assets in `preload` 
-[2] -set up images and variables in `create` 
-[3] -update your gamein each frame `update`
+[1] - load assets in `preload` 
+[2] - set up images and variables in `create` 
+[3] - update your gamein each frame `update`
 
 ## Project setup 
 create two files index.html and main.js
-[x] -`index.html` will load the pharser from the CDN
-[x] -`main.js` will create the game and attached to the div 
+[x] - `index.html` will load the pharser from the CDN
+[x] - `main.js` will create the game and attached to the div 
 
+## Game config
+
+Snake is easiest on a grid. You choose a tile size and a number of tiles wide and high. You also define colors for the background, the snake, and the food. Then you create a Phaser game config that points to your scene functions.
+
+The config tells Phaser to create a canvas, set its size, and use your scene functions. Phaser.AUTO selects WebGL if possible and falls back to Canvas.
 
 
 
