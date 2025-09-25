@@ -38,4 +38,5 @@ The config tells Phaser to create a canvas, set its size, and use your scene fun
 
 You need to store the snake’s body as grid cells, the rectangles that draw those cells, the direction of travel, the queued input, the food cell, the score, and the movement timer. A few helper functions keep the math clean.
 
+gridToPixelCenter converts a grid cell to the center point in pixels so rectangles line up. randomFreeCell finds a cell not used by the snake. isOpposite helps block instant reversals that would cause a crash.
 
